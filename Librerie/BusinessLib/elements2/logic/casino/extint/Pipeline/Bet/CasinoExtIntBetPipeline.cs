@@ -13,22 +13,23 @@ namespace GamingTests.Librerie.BusinessLib.elements2.logic.casino.extint.Pipelin
         {
             return new List<Step<BetCtx>>
             {
-                new Step<BetCtx>(BetHook.ResponseDefinition,      Bet_ResponseDefinition),
-                new Step<BetCtx>(BetHook.ContextBaseGeneration,   Bet_ContextBaseGeneration),
-                new Step<BetCtx>(BetHook.RequestValidation,       Bet_RequestValidation),
-                new Step<BetCtx>(BetHook.IdempotencyLookup,       Bet_IdempotencyLookup),
-                new Step<BetCtx>(BetHook.LoadSession,             Bet_LoadSession),
-                new Step<BetCtx>(BetHook.BalanceCheck,            Bet_BalanceCheck),
-                new Step<BetCtx>(BetHook.CreateMovement,          Bet_CreateMovement),
-                new Step<BetCtx>(BetHook.PersistMovementCreate,   Bet_PersistMovementCreate),
-                new Step<BetCtx>(BetHook.ExecuteExternalTransfer, Bet_ExecuteExternalTransfer),
-                new Step<BetCtx>(BetHook.PersistMovementFinalize, Bet_PersistMovementFinalize),
-                new Step<BetCtx>(BetHook.BuildResponse,           Bet_BuildResponse),
+                new Step<BetCtx>(BetHook.ResponseDefinition,      Bet_ResponseDefinition,      BetHook.ResponseDefinition.ToString()),
+                new Step<BetCtx>(BetHook.ContextBaseGeneration,   Bet_ContextBaseGeneration,   BetHook.ContextBaseGeneration.ToString()),
+                new Step<BetCtx>(BetHook.RequestValidation,       Bet_RequestValidation,       BetHook.RequestValidation.ToString()),
+                new Step<BetCtx>(BetHook.IdempotencyLookup,       Bet_IdempotencyLookup,       BetHook.IdempotencyLookup.ToString()),
+                new Step<BetCtx>(BetHook.LoadSession,             Bet_LoadSession,             BetHook.LoadSession.ToString()),
+                new Step<BetCtx>(BetHook.BalanceCheck,            Bet_BalanceCheck,            BetHook.BalanceCheck.ToString()),
+                new Step<BetCtx>(BetHook.CreateMovement,          Bet_CreateMovement,          BetHook.CreateMovement.ToString()),
+                new Step<BetCtx>(BetHook.PersistMovementCreate,   Bet_PersistMovementCreate,   BetHook.PersistMovementCreate.ToString()),
+                new Step<BetCtx>(BetHook.ExecuteExternalTransfer, Bet_ExecuteExternalTransfer, BetHook.ExecuteExternalTransfer.ToString()),
+                new Step<BetCtx>(BetHook.PersistMovementFinalize, Bet_PersistMovementFinalize, BetHook.PersistMovementFinalize.ToString()),
+                new Step<BetCtx>(BetHook.BuildResponse,           Bet_BuildResponse,           BetHook.BuildResponse.ToString()),
 
                 // Target per Jump idempotency
-                new Step<BetCtx>(BetHook.Resend,                  Bet_Resend)
+                new Step<BetCtx>(BetHook.Resend,                  Bet_Resend,                  BetHook.Resend.ToString()),
             };
         }
+
         protected CompiledSteps<BetCtx> BuildBetPipeline()
         {
             var steps = BuildStandardBetSteps();
