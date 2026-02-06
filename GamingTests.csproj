@@ -1,0 +1,149 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <IsPackable>false</IsPackable>
+    <IsTestProject>true</IsTestProject>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="obj\Debug\net48\.NETFramework,Version=v4.8.AssemblyAttributes.cs" />
+    <Compile Include="obj\Debug\net48\GamingTests.GlobalUsings.g.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="bin\Debug\net48\AAMSLib.xml" />
+    <Content Include="bin\Debug\net48\BaseLib.xml" />
+    <Content Include="bin\Debug\net48\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml" />
+    <Content Include="bin\Debug\net48\netlib2.xml" />
+    <Content Include="bin\Debug\net48\NetLibFx4.xml" />
+    <Content Include="bin\Debug\net48\Newtonsoft.Json.xml" />
+    <Content Include="bin\Debug\net48\UAParser.xml" />
+    <Content Include="obj\Debug\net48\GamingTests.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\GamingTests.csproj.nuget.dgspec.json" />
+    <Content Include="obj\project.assets.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="bin\Debug\net48\AAMSLib.dll" />
+    <None Include="bin\Debug\net48\AAMSLib.pdb" />
+    <None Include="bin\Debug\net48\backconnface.dll" />
+    <None Include="bin\Debug\net48\backconnface.pdb" />
+    <None Include="bin\Debug\net48\backconnlib.dll" />
+    <None Include="bin\Debug\net48\backconnlib.pdb" />
+    <None Include="bin\Debug\net48\BaseLib.dll" />
+    <None Include="bin\Debug\net48\BaseLib.pdb" />
+    <None Include="bin\Debug\net48\BaseSitoLib.dll" />
+    <None Include="bin\Debug\net48\BaseSitoLib.pdb" />
+    <None Include="bin\Debug\net48\BouncyCastle.Crypto.dll" />
+    <None Include="bin\Debug\net48\businesslib2.dll" />
+    <None Include="bin\Debug\net48\businesslib2.pdb" />
+    <None Include="bin\Debug\net48\DeckLib.dll" />
+    <None Include="bin\Debug\net48\DeckLib.pdb" />
+    <None Include="bin\Debug\net48\DotNetOpenMail.dll" />
+    <None Include="bin\Debug\net48\GamingTests.dll" />
+    <None Include="bin\Debug\net48\GamingTests.dll.config" />
+    <None Include="bin\Debug\net48\GamingTests.pdb" />
+    <None Include="bin\Debug\net48\HashLib.dll" />
+    <None Include="bin\Debug\net48\HashLib.pdb" />
+    <None Include="bin\Debug\net48\log4net.dll" />
+    <None Include="bin\Debug\net48\log\root.log" />
+    <None Include="bin\Debug\net48\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
+    <None Include="bin\Debug\net48\Microsoft.VisualStudio.CodeCoverage.Shim.dll" />
+    <None Include="bin\Debug\net48\netlib2.dll" />
+    <None Include="bin\Debug\net48\netlib2.pdb" />
+    <None Include="bin\Debug\net48\NetLibFx4.dll" />
+    <None Include="bin\Debug\net48\NetLibFx4.pdb" />
+    <None Include="bin\Debug\net48\Newtonsoft.Json.dll" />
+    <None Include="bin\Debug\net48\Newtonsoft.Json.pdb" />
+    <None Include="bin\Debug\net48\nunit.engine.api.dll" />
+    <None Include="bin\Debug\net48\nunit.engine.core.dll" />
+    <None Include="bin\Debug\net48\nunit.engine.dll" />
+    <None Include="bin\Debug\net48\nunit.framework.dll" />
+    <None Include="bin\Debug\net48\NUnit3.TestAdapter.dll" />
+    <None Include="bin\Debug\net48\NUnit3.TestAdapter.pdb" />
+    <None Include="bin\Debug\net48\nunit_random_seed.tmp" />
+    <None Include="bin\Debug\net48\QRCoder.dll" />
+    <None Include="bin\Debug\net48\RestSharp.dll" />
+    <None Include="bin\Debug\net48\System.Data.HashFunction.Core.dll" />
+    <None Include="bin\Debug\net48\System.Data.HashFunction.CRC.dll" />
+    <None Include="bin\Debug\net48\System.Data.HashFunction.Interfaces.dll" />
+    <None Include="bin\Debug\net48\testcentric.engine.metadata.dll" />
+    <None Include="bin\Debug\net48\totemlib.dll" />
+    <None Include="bin\Debug\net48\totemlib.pdb" />
+    <None Include="bin\Debug\net48\UAParser.dll" />
+    <None Include="obj\Debug\net48\GamingTe.ADCC3897.Up2Date" />
+    <None Include="obj\Debug\net48\GamingTests.assets.cache" />
+    <None Include="obj\Debug\net48\GamingTests.csproj.AssemblyReference.cache" />
+    <None Include="obj\Debug\net48\GamingTests.csproj.BuildWithSkipAnalyzers" />
+    <None Include="obj\Debug\net48\GamingTests.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\net48\GamingTests.dll" />
+    <None Include="obj\Debug\net48\GamingTests.dll.config" />
+    <None Include="obj\Debug\net48\GamingTests.dll.withSupportedRuntime.config" />
+    <None Include="obj\Debug\net48\GamingTests.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="obj\Debug\net48\GamingTests.pdb" />
+    <None Include="obj\GamingTests.csproj.nuget.g.props" />
+    <None Include="obj\GamingTests.csproj.nuget.g.targets" />
+    <None Include="obj\project.nuget.cache" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="coverlet.collector" Version="6.0.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.8.0" />
+    <PackageReference Include="NUnit" Version="3.14.0" />
+    <PackageReference Include="NUnit.Analyzers" Version="3.9.0" />
+    <PackageReference Include="NUnit3TestAdapter" Version="4.5.0" />
+    <PackageReference Include="System.Net.Http" Version="4.3.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Using Include="NUnit.Framework" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="AAMSLib">
+      <HintPath>..\BaseReferences\AAMSLib\AAMSLib.dll</HintPath>
+    </Reference>
+    <Reference Include="backconnface">
+      <HintPath>..\Applicazione\backconn\Bin\backconnface.dll</HintPath>
+    </Reference>
+    <Reference Include="backconnlib">
+      <HintPath>..\Applicazione\backconn\Bin\backconnlib.dll</HintPath>
+    </Reference>
+    <Reference Include="BaseLib">
+      <HintPath>..\BaseReferences\BaseLib\BaseLib.dll</HintPath>
+    </Reference>
+    <Reference Include="BaseSitoLib">
+      <HintPath>..\Applicazione\backconn\Bin\BaseSitoLib.dll</HintPath>
+    </Reference>
+    <Reference Include="businesslib2">
+      <HintPath>..\Applicazione\backconn\Bin\businesslib2.dll</HintPath>
+    </Reference>
+    <Reference Include="HashLib">
+      <HintPath>..\Applicazione\backconn\Bin\HashLib.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\Applicazione\backconn\Bin\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="netlib2">
+      <HintPath>..\Applicazione\backconn\Bin\netlib2.dll</HintPath>
+    </Reference>
+    <Reference Include="NetLibFx4">
+      <HintPath>..\Applicazione\backconn\Bin\NetLibFx4.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\Applicazione\backconn\Bin\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>..\Applicazione\backconn\Bin\nunit.framework.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Librerie\BusinessLib\elements2\logic\casino\extint\extcas\" />
+  </ItemGroup>
+
+</Project>
