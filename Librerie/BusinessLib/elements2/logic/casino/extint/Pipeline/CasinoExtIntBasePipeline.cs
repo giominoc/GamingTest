@@ -173,6 +173,20 @@ namespace GamingTests.Librerie.BusinessLib.elements2.logic.casino.extint.Pipelin
         // =====================================================================
 
         /// <summary>
+        /// Helper per tracciare i balance di sessione in modo veloce.
+        /// </summary>
+        public class SessionBalancesHolder
+        {
+            public long amountTotal;
+            public long amountCash;
+            public long amountBonus;
+            public long amountPlayBonus;
+            public long amountWith;
+            public long amountDepo;
+            public int lastRemFr;
+        }
+
+        /// <summary>
         /// Interfaccia minima necessaria per:
         /// - Jump (JumpToKey)
         /// - Stop (Stop)
