@@ -185,23 +185,5 @@ namespace GamingTests.Librerie.BusinessLib.elements2.logic.casino.extint.Pipelin
             bool Stop { get; set; }
         }
 
-        /// <summary>
-        /// Holder "leggero" dei balances/counters sessione.
-        ///
-        /// Nota: viene popolato da hook dedicati (es. BalanceCheck), così non carichi tutto subito.
-        /// </summary>
-        public sealed class SessionBalancesHolder
-        {
-            public long amountTotal;
-            public long bonus;
-            public int funBonus;
-            public int lastProgr;
-            public int lastRemFr;
-            public long maxId;
-            public string currentRound = string.Empty; // empty = no round or round closed
-            public long amountTotalWin;
-            public long accountBalance;
-        }
-
     }
 }

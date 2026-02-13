@@ -75,6 +75,7 @@
     <None Include="bin\Debug\net48\totemlib.dll" />
     <None Include="bin\Debug\net48\totemlib.pdb" />
     <None Include="bin\Debug\net48\UAParser.dll" />
+    <None Include="GamingTests.sln" />
     <None Include="obj\Debug\net48\GamingTe.ADCC3897.Up2Date" />
     <None Include="obj\Debug\net48\GamingTests.assets.cache" />
     <None Include="obj\Debug\net48\GamingTests.csproj.AssemblyReference.cache" />
