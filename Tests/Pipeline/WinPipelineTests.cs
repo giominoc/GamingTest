@@ -134,7 +134,7 @@ namespace GamingTests.Tests.Pipeline
             {
                 _trace.Add("RequestValidation");
                 ctx.CmbType = CasinoMovimentiBuffer.Type.Win;
-                ctx.TargetState = CasinoMovimentiBuffer.States.Dumped;
+                ctx.TargetState = CasinoMovimentiBuffer.States.PreDumped;
                 ctx.TargetStateFinal = CasinoMovimentiBuffer.States.Committed;
             }
 

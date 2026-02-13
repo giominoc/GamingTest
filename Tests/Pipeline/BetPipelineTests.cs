@@ -211,7 +211,7 @@ namespace GamingTests.Tests.Pipeline
 
                 // Validazione base
                 ctx.CmbType = CasinoMovimentiBuffer.Type.Loose;
-                ctx.TargetState = CasinoMovimentiBuffer.States.Dumped;
+                ctx.TargetState = CasinoMovimentiBuffer.States.PreDumped;
                 ctx.TargetStateFinal = CasinoMovimentiBuffer.States.Committed;
 
                 if (StopAtValidation)
