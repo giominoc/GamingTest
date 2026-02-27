@@ -39,10 +39,13 @@
     /Cancel                                  # Metodo Cancel (13 file, stessa struttura + FindRelatedBet)
 
 /am
-  CasinoExtIntAMSWCorePipelineComposition.cs  # Implementazione finale (1 file)
+  CasinoExtIntAMSWCore.cs                    # ✅ NEW: Production-ready AMSW implementation
+  CasinoExtIntAMSWCorePipelineComposition.cs  # Legacy pipeline implementation
 
 /Tests/Pipeline
-  PipelineArchitectureTests.cs               # Test architettura (1 file)
+  CompositionPipelineTests.cs                # ✅ NEW: Comprehensive composition tests (12 tests)
+  CasinoExtIntAMSWCoreTests.cs               # ✅ NEW: AMSW Core integration tests (14 tests)
+  PipelineArchitectureTests.cs               # Architecture structure tests
 
 /
   PIPELINE_ARCHITECTURE_COMPOSITION.md       # Guida architettura (16KB)
@@ -55,10 +58,11 @@
 
 ## Uso Base
 
-### Eseguire una transazione
+### Uso Raccomandato: CasinoExtIntAMSWCore (NEW)
 
 ```csharp
-var core = new CasinoExtIntAMSWCorePipelineComposition();
+// Ottieni singleton
+var core = CasinoExtIntAMSWCore.def;
 
 // Win (Credit/Deposit)
 var result = core.ExecuteWin(euId, auxPars);
@@ -68,6 +72,20 @@ var result = core.ExecuteBet(euId, auxPars);
 
 // Cancel (Rollback)
 var result = core.ExecuteCancel(euId, auxPars);
+
+// Usa tramite dispatcher (metodo getAuxInfos)
+var callPars = new HashParams("transactionId", "TX123", "amount", 100L);
+var auxPar = new HashParams("euId", euId, "callPars", callPars);
+var dispatchResult = core.getAuxInfos("bet", auxPar);
+```
+
+### Uso Alternativo: Diretto via Factory
+
+```csharp
+// Chiamata diretta senza passare per CasinoExtIntAMSWCore
+var result = WinPipelineFactory.Execute(euId, auxPars, "CasinoAM");
+var result = BetPipelineFactory.Execute(euId, auxPars, "CasinoAM");
+var result = CancelPipelineFactory.Execute(euId, auxPars, "CasinoAM");
 ```
 
 ### Ottenere diagnostica
